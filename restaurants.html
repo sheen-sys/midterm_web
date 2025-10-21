@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Foodie Express - Place Your Order</title>
+  <title>Foodie Express - Restaurants</title>
   <link rel="stylesheet" href="GroAcStyle.css" />
 </head>
 <body>
@@ -11,14 +11,14 @@
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <img src="logo.png" alt="Foodie Express Logo" />
+          <img src="bg.png" alt="Foodie Express Logo" />
           <h1>Crave Cart Express</h1>
         </div>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="restaurants.html" class="active">Restaurants</a></li>
             <li><a href="deals.html">Deals</a></li>
             <li><a href="about.html">About Us</a></li>
           </ul>
@@ -30,28 +30,38 @@
     </div>
   </header>
 
-  <section class="container order-section">
-    <h2 class="section-title">Place Your Order</h2>
-    <form action="submit_order.php" method="POST" id="orderForm">
-      
-      
-
-      <label for="customerName">Name:</label>
-      <input type="text" id="customerName" name="customerName" required />
-
-      <label for="customerPhone">Contact Number:</label>
-      <input type="tel" id="customerPhone" name="customerPhone" pattern="[0-9]{10,15}" required />
-
-      <label for="customerAddress">Address:</label>
-      <input type="text" id="customerAddress" name="customerAddress" required />
-
-      <label class="cod-label">
-        <input type="checkbox" id="cod" name="cod" value="yes" />
-        Cash On Delivery
-      </label>
-
-      <button type="submit" class="btn order-btn">Submit Order</button>
-    </form>
+  <section class="container cuisine-section">
+    <h2 class="section-title">Our Partner Restaurants</h2>
+    <div class="categories">
+      <div class="category-card">
+        <div class="category-img" style="background-image: url('pizz.jpg');"></div>
+        <div class="category-content">
+          <h3>Pizza Palace</h3>
+          <p>Italian, Pizza</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-img" style="background-image: url('burger.jpg');"></div>
+        <div class="category-content">
+          <h3>Burger Barn</h3>
+          <p>Burgers, Fast Food</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-img" style="background-image: url('sushi.jpg');"></div>
+        <div class="category-content">
+          <h3>Sushi Central</h3>
+          <p>Japanese, Sushi</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-img" style="background-image: url('st.jpg');"></div>
+        <div class="category-content">
+          <h3>Steak House</h3>
+          <p>Steak, Grill</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -101,6 +111,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>

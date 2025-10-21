@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Foodie Express - Place Your Order</title>
+  <title>Foodie Express - Home</title>
   <link rel="stylesheet" href="GroAcStyle.css" />
 </head>
 <body>
@@ -11,12 +11,12 @@
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <img src="logo.png" alt="Foodie Express Logo" />
+        <img src="log.png" alt="Foodie Express Logo" />
           <h1>Crave Cart Express</h1>
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="restaurants.html">Restaurants</a></li>
             <li><a href="deals.html">Deals</a></li>
@@ -30,30 +30,37 @@
     </div>
   </header>
 
-  <section class="container order-section">
-    <h2 class="section-title">Place Your Order</h2>
-    <form action="submit_order.php" method="POST" id="orderForm">
-      
-      
-
-      <label for="customerName">Name:</label>
-      <input type="text" id="customerName" name="customerName" required />
-
-      <label for="customerPhone">Contact Number:</label>
-      <input type="tel" id="customerPhone" name="customerPhone" pattern="[0-9]{10,15}" required />
-
-      <label for="customerAddress">Address:</label>
-      <input type="text" id="customerAddress" name="customerAddress" required />
-
-      <label class="cod-label">
-        <input type="checkbox" id="cod" name="cod" value="yes" />
-        Cash On Delivery
-      </label>
-
-      <button type="submit" class="btn order-btn">Submit Order</button>
-    </form>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Delicious Food at your Doorstep</h2>
+        <p>Order from your favorite restaurants with just a few clicks</p>
+        <div class="search-bar">
+          <input type="text" placeholder="What are you craving?" />
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <section class="container cuisine-section">
+    <h2 class="section-title">Featured Foods</h2>
+    <div class="food-grid">
+      <div class="food-card">
+        <div class="food-img" style="background-image: url('pizz.jpg');"></div>
+        <div class="food-content">
+          <div class="food-title">
+            <h3>Margherita Pizza</h3>
+            <span class="price">Php250.00</span>
+          </div>
+          <p>Classic pizza with tomato sauce, mozzarella, and fresh basil</p>          
+          <a href="order.html?food=Margherita%20Pizza" class="btn">Order</a>
+        </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+  
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -61,10 +68,8 @@
           <h3>Crave Cart Express</h3>
           <p>Delivering delicious food to your doorstep since 2020.</p>
           <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
           </div>
         </div>
         <div class="footer-column">
@@ -90,9 +95,9 @@
         <div class="footer-column">
           <h3>Contact Us</h3>
           <ul>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Crave Cart Street, City</li>
-            <li><i class="fas fa-phone"></i> 09563421672</li>
-            <li><i class="fas fa-envelope"></i> info@cravecartexpress.com</li>
+            <li>123 Crave Cart Street, City</li>
+            <li>09563421672</li>
+            <li>info@cravecartexpress.com</li>
           </ul>
         </div>
       </div>
@@ -101,6 +106,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>

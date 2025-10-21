@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Foodie Express - Place Your Order</title>
+  <title>Foodie Express - Deals</title>
   <link rel="stylesheet" href="GroAcStyle.css" />
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <img src="logo.png" alt="Foodie Express Logo" />
+          <img src="log.png" alt="Foodie Express Logo" />
           <h1>Crave Cart Express</h1>
         </div>
         <nav>
@@ -19,7 +19,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="restaurants.html">Restaurants</a></li>
-            <li><a href="deals.html">Deals</a></li>
+            <li><a href="deals.html" class="active">Deals</a></li>
             <li><a href="about.html">About Us</a></li>
           </ul>
         </nav>
@@ -30,28 +30,43 @@
     </div>
   </header>
 
-  <section class="container order-section">
-    <h2 class="section-title">Place Your Order</h2>
-    <form action="submit_order.php" method="POST" id="orderForm">
-      
-      
-
-      <label for="customerName">Name:</label>
-      <input type="text" id="customerName" name="customerName" required />
-
-      <label for="customerPhone">Contact Number:</label>
-      <input type="tel" id="customerPhone" name="customerPhone" pattern="[0-9]{10,15}" required />
-
-      <label for="customerAddress">Address:</label>
-      <input type="text" id="customerAddress" name="customerAddress" required />
-
-      <label class="cod-label">
-        <input type="checkbox" id="cod" name="cod" value="yes" />
-        Cash On Delivery
-      </label>
-
-      <button type="submit" class="btn order-btn">Submit Order</button>
-    </form>
+  <section class="container cuisine-section">
+    <h2 class="section-title">Current Deals & Promotions</h2>
+    <div class="food-grid">
+      <div class="food-card">
+        <div class="food-img" style="background-image: url('pizza-deals.jpg');"></div>
+        <div class="food-content">
+          <div class="food-title">
+            <h3>Buy 1 Get 1 Margherita Pizza</h3>
+            <span class="price">Limited Time</span>
+          </div>
+          <p>Order a Margherita Pizza and get another one free!</p>
+          <a href="order.html?food=Margherita%20Pizza" class="btn">Order</a>
+        </div>
+      </div>
+      <div class="food-card">
+        <div class="food-img" style="background-image: url('burg-deals.jpg');"></div>
+        <div class="food-content">
+          <div class="food-title">
+            <h3>25% Off Classic Burger</h3>
+            <span class="price">Php131.25</span>
+          </div>
+          <p>Enjoy 25% discount on all Classic Burgers this week.</p>
+          <a href="order.html?food=Margherita%20Pizza" class="btn">Order</a>
+        </div>
+      </div>
+      <div class="food-card">
+        <div class="food-img" style="background-image: url('sushi-deals.jpg');"></div>
+        <div class="food-content">
+          <div class="food-title">
+            <h3>Free Drink with California Rolls</h3>
+            <span class="price">Php220.00</span>
+          </div>
+          <p>Get a complimentary soft drink when you order California Rolls.</p>
+          <a href="order.html?food=Margherita%20Pizza" class="btn">Order</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -101,6 +116,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
