@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Foodie Express - Place Your Order</title>
   <link rel="stylesheet" href="GroAcStyle.css" />
+  
 </head>
 <body>
   <header>
@@ -23,19 +24,15 @@
             <li><a href="about.html">About Us</a></li>
           </ul>
         </nav>
-        <div class="header-buttons">
-          
         </div>
       </div>
     </div>
   </header>
 
-  <section class="container order-section">
-    <h2 class="section-title">Place Your Order</h2>
-    <form action="submit_order.php" method="POST" id="orderForm">
-      
-      
-
+<body>
+  <div class="order-container">
+    <h2><i>Place Your Order</i></h2>
+    <form action="submit_order.php" method="POST">
       <label for="customerName">Name:</label>
       <input type="text" id="customerName" name="customerName" required />
 
@@ -50,9 +47,11 @@
         Cash On Delivery
       </label>
 
-      <button type="submit" class="btn order-btn">Submit Order</button>
+      <button type="submit" class="btn">Submit Order</button>
     </form>
-  </section>
+  </div>
+</body>
+</html>
 
   <footer>
     <div class="container">

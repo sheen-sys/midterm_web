@@ -198,7 +198,7 @@ nav ul li a:hover {
 
 .category-content h3 {
   margin-bottom: 10px;
-  color: #0e0d0d;
+  color: #f6f1f1;
 }
 
 /* Cuisine Sections */
@@ -236,11 +236,11 @@ nav ul li a:hover {
 .food-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;                   /* equal gaps between boxes */
-  justify-content: center;     /* centers the grid as a group */
-  max-width: 1200px;           /* sets total width so it doesn’t stretch full screen */
-  margin: 0 auto;              /* centers the whole grid horizontally */
-  padding: 0 20px;             /* small left/right breathing room */
+  gap: 30px;                   
+  justify-content: center;     
+  max-width: 1200px;           
+  margin: 0 auto;              
+  padding: 0 20px;             
   box-sizing: border-box;
 }
 
@@ -454,7 +454,7 @@ footer {
     justify-content: space-between;
   }
 }
-
+/* Sign-in Section */
 .signin-section {
   backdrop-filter: blur(6px); 
   background-color: rgba(255, 255, 255, 0.3); 
@@ -465,7 +465,6 @@ footer {
   max-width: 400px;
   margin: 80px auto 100px;
 }
-
 .signin-form {
   display: flex;
   flex-direction: column;
@@ -546,6 +545,7 @@ footer {
   margin-left: 480px;
 }
 
+/* ====== HEADER ====== */
 .order-container h2 {
   color: white;
   font-style: italic;
@@ -553,7 +553,7 @@ footer {
   margin-bottom: 20px;
 }
 
-
+/* ====== LABELS ====== */
 .order-container label {
   display: block;
   color: #ddd;
@@ -562,7 +562,7 @@ footer {
   font-size: 15px;
 }
 
-
+/* ====== INPUT FIELDS ====== */
 .order-container input[type="text"],
 .order-container input[type="tel"] {
   width: 100%;
@@ -572,6 +572,7 @@ footer {
   margin-top: 5px;
   outline: none;
 }
+
 
 .order-container input[type="checkbox"] {
   margin-top: 15px;
